@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Của Hiếu</title>
+    <link rel="stylesheet" href="ASm.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <header>
+                <div class="logo">
+                    <img src="z6312090136439_4521927e2338c22b1fabdb215d002e7d.jpg" alt="logo" class="logo-img">
+                    <h1>Cửa Hàng Đồ Hiệu</h1>
+                </div>
+                <div class="login-btn">
+                    <button id="loginToggle" class="circle-btn">Đăng Nhập</button>
+                </div>
+            </header>
+            <section id="loginSection" class="login hidden" draggable="true">
+                <h2>Đăng Nhập</h2>
+                <form id="loginForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="username">Tên Đăng Nhập:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật Khẩu:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Đăng Nhập</button>
+                </form>
+            </section>
+        </div>
+        </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li class="dropdown">
+                    <a href="#products">Sản Phẩm</a>
+                    <div class="dropdown-content">
+                        <a href="Unknown9.jpeg">Louis Vuitton</a>
+                        <a href="Unknown8.jpeg">Gucci</a>
+                        <a href="Unknown7.jpeg">Balenciaga</a>
+                        <a href="Unknown6.jpeg">Chanel</a>
+                        <a href="Unknown5.jpeg">Dior</a>
+                        <a href="unknown.jpeg">Hermes</a>
+                    </div>
+                </li>
+                <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="z6308789854666_d0dbb910fdfdd8e6c49fcbd3bf8e14cb.jpg" alt="Cửa Hàng Đồ Hiệu" class="hero-image">
+        <h2>Chào Mừng đến với Cửa Hàng Đồ Hiệu</h2>
+        <p>Khám phá những bộ sưu tập thời trang đẳng cấp.</p>
+        <a href="#products" class="cta-btn">Xem Sản Phẩm</a>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-item">
+            <h3>Túi Xách Louis Vuitton</h3>
+            <img src="Unknown9.jpeg" alt="">
+            <p class="price">10,000,000 VND</p>
+            <a href="#" class="buy-btn">Mua Ngay</a>
+            <a href="#" class="buy-btn add-to-cart">Thêm Vào Giỏ</a>
+        </div>
+        <div class="product-item">
+            <h3>Giày Gucci</h3>
+            <img src="Unknown8.jpeg" alt="">
+            <p class="price">8,500,000 VND</p>
+            <a href="#" class="buy-btn">Mua Ngay</a>
+            <a href="#" class="buy-btn add-to-cart">Thêm Vào Giỏ</a>
+        </div>
+        <div class="product-item">
+            <h3>Áo Balenciaga</h3>
+            <img src="Unknown7.jpeg" alt="">
+            <p class="price">12,000,000 VND</p>
+            <a href="#" class="buy-btn">Mua Ngay</a>
+            <a href="#" class="buy-btn add-to-cart">Thêm Vào Giỏ</a>
+        </div>
+        <div class="product-item">
+            <h3>Giày Chanel</h3>
+            <img src="Unknown6.jpeg" alt="">
+            <p class="price">21,000,000 VND</p>
+            <a href="#" class="buy-btn">Mua Ngay</a>
+            <a href="#" class="buy-btn add-to-cart">Thêm Vào Giỏ</a>
+        </div>
+        <div class="product-item">
+            <h3>Dầu thơm Dior SAUVAGE </h3>
+            <img src="Unknown5.jpeg" alt="">
+            <p class="price">4,950,000 VND</p>
+            <a href="#" class="buy-btn">Mua Ngay</a>
+            <a href="#" class="buy-btn add-to-cart">Thêm Vào Giỏ</a>
+        </div>
+        <div class="product-item">
+            <h3>Túi Xách Hermes</h3>
+            <img src="unknown.jpeg" alt="">
+            <p class="price">9,999,999VND</p>
+            <a href="#" class="buy-btn">Mua Ngay</a>
+            <a href="#" class="buy-btn add-to-cart">Thêm Vào Giỏ</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>Giới Thiệu</h2>
+        <p>Chúng tôi cung cấp những sản phẩm đồ hiệu chất lượng nhất. Cam kết mang lại sự hài lòng tối đa cho khách hàng.</p>
+        <div id="videoContainer" class="hidden">
+            <video id="introVideo" width="600" controls>
+                <source src="0224.mov" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ video.
+            </video>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Liên Hệ</h2>
+        <p>Email: hhhhhiy797@gmail.com</p>
+        <p>Điện thoại: 0123456789</p>
+            <p>Địa chỉ: <a href="https://www.google.com/maps?q=10.810775871047111,105.35208631869428" target="_blank">
+                Quảng trường Võ Nguyên Giáp</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cửa Hàng Đồ Hiệu. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".add-to-cart").forEach(button => {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault(); 
+                    let productName = this.parentElement.querySelector("h3").innerText;
+                    let productPrice = this.parentElement.querySelector(".price").innerText;
+                    let productImage = this.parentElement.querySelector("img").src;
+    
+                    let product = { name: productName, price: productPrice, image: productImage };
+    
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    cart.push(product);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+    
+                    window.location.href = "cart.html"; 
+                });
+            });
+    
+           
+            document.querySelectorAll(".buy-btn").forEach(button => {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault();
+    
+                    let productName = this.parentElement.querySelector("h3").innerText;
+                    let productPrice = this.parentElement.querySelector(".price").innerText;
+                    let productImage = this.parentElement.querySelector("img").src;
+    
+                    let product = { name: productName, price: productPrice, image: productImage };
+    
+                    localStorage.setItem("checkout", JSON.stringify([product]));
+    
+                    window.location.href = "checkout.html"; 
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".add-to-cart").forEach(button => {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault(); 
+                    let productName = this.parentElement.querySelector("h3").innerText;
+                    let productPrice = this.parentElement.querySelector(".price").innerText; 
+                    let productImage = this.parentElement.querySelector("img").src; 
+                    let product = { name: productName, price: productPrice, image: productImage };
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    cart.push(product);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    window.location.href = "cart.html";
+                });
+            });
+        });
+    </script>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const loginToggle = document.getElementById("loginToggle");
+    const loginSection = document.getElementById("loginSection");
+    const loginForm = document.getElementById("loginForm");
+
+    // Hiện/ẩn form đăng nhập khi nhấn nút Đăng Nhập
+    loginToggle.addEventListener("click", function () {
+        loginSection.classList.toggle("show-login");
+    });
+
+    // Xử lý đăng nhập
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Ngăn chặn form reload trang
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username && password) {
+            // Giả lập đăng nhập thành công (có thể thay bằng API)
+            localStorage.setItem("loggedInUser", username);
+
+            alert("Đăng nhập thành công!");
+            
+            // Chuyển hướng về trang chủ
+            window.location.href = "#home"; 
+        } else {
+            alert("Vui lòng nhập đầy đủ thông tin!");
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutLink = document.getElementById("aboutLink");
+    const videoContainer = document.getElementById("videoContainer");
+    const introVideo = document.getElementById("introVideo");
+
+    aboutLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Ngăn cuộn trang
+
+        // Hiện video nếu đang ẩn, ẩn nếu đang hiện
+        if (videoContainer.classList.contains("hidden")) {
+            videoContainer.classList.remove("hidden");
+            introVideo.play();
+        } else {
+            videoContainer.classList.add("hidden");
+            introVideo.pause();
+        }
+    });
+});
+    </script>
+    <script src="https://uhchat.net/code.php?f=c40606"></script>
+</body>
+</html>
