@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" href="ASm.css">
+</head>
+<body>
+    <section id="video-section">
+        <h2>Giới Thiệu Sản Phẩm</h2>
+        <video id="introVideo" width="800" controls autoplay>
+            <source src="0224.mov" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const introVideo = document.getElementById("introVideo");
+
+            // Khi video chạy hết, chuyển về trang chủ
+            introVideo.onended = function () {
+                window.location.href = "ASM.html"; // Đổi về trang chủ
+            };
+        });
+    </script>
+    <script src="https://uhchat.net/code.php?f=c40606"></script>
+</body>
+</html>

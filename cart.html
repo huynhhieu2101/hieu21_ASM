@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="ASm.css">
+</head>
+<body>
+    <header>
+        <h1>Giỏ Hàng</h1>
+        <a href="ASM.html">Quay lại mua hàng</a>
+    </header>
+
+    <section id="cart">
+        <h2>Sản Phẩm Trong Giỏ Hàng</h2>
+        <div id="cart-items"></div>
+    </section>
+
+    <footer>
+        <button onclick="clearCart()">Xóa Giỏ Hàng</button>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            let cartItemsContainer = document.getElementById("cart-items");
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = "<p>Giỏ hàng của bạn đang trống.</p>";
+            } else {
+                cart.forEach(product => {
+                    let item = document.createElement("div");
+                    item.classList.add("cart-item");
+                    item.innerHTML = `
+                        <img src="${product.image}" width="100">
+                        <p><strong>${product.name}</strong></p>
+                        <p>${product.price}</p>
+                    `;
+                    cartItemsContainer.appendChild(item);
+                });
+            }
+        });
+
+        function clearCart() {
+            localStorage.removeItem("cart");
+            location.reload();
+        }
+    </script>
+</body>
+</html>
